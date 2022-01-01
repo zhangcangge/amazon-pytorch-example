@@ -94,6 +94,7 @@ val_data = batchify(corpus.valid, eval_batch_size)
 test_data = batchify(corpus.test, eval_batch_size)
 
 #张伦 debug
+print('----------------------------------------------------------------------------------------------')
 print('Train data {}'.format(train_data))
 print('Val data {}'.format(val_data))
 print('Test data {}'.format(test_data))
@@ -173,6 +174,10 @@ def evaluate(data_source):
 
 
 def train():
+    
+    # 张伦 debug
+    print('----------------------------------------------------------------------------------------------')
+    print('Get into script train.')
     # Turn on training mode which enables dropout.
     # model.train()
     # total_loss = 0.
